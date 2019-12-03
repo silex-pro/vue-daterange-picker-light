@@ -425,8 +425,8 @@
         this.start = new Date(value[0])
         this.end = new Date(value[1])
         this.changeLeftMonth({
-          month: value[0].month(),
-          year: value[0].year()
+          month: value[0].getMonth(),
+          year: value[0].getFullYear()
         })
         if (this.autoApply)
           this.clickedApply()
