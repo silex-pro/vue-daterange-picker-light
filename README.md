@@ -1,18 +1,18 @@
-# vue2-daterange-picker
+# vue-daterange-picker-light
 
-> Vue2 date range picker base on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)
+> Vue2 date range picker base on https://github.com/dangrossman/bootstrap-daterangepicker with date-fns (no jQuery)
 
 The component is in its early stages so if there is something wrong - write an issue or create a pull request.
 
 ## Demo and Usage
-You can see a demo here: 
-https://innologica.github.io/vue2-daterange-picker/
+You can see a demo here:
+https://silex-pro.github.io/vue2-daterange-picker/
 
 ## Installation
 
 ``` bash
 # install via npm
-npm i vue2-daterange-picker --save
+npm i vue-daterange-picker-light --save
 ```
 
 ## TODO

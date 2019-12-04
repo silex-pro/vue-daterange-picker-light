@@ -1,6 +1,6 @@
-# Vue date range picker
+# Vue date range picker light
 
-> Vue2 date range picker based on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)
+> Vue2 date range picker based on https://github.com/dangrossman/bootstrap-daterangepicker with date-fns (no jQuery)
 
 Date range picker component for vue made without jQuery dependency. Heavily inspired by bootstrap-daterangepicker.
 
@@ -8,28 +8,28 @@ Date range picker component for vue made without jQuery dependency. Heavily insp
 ## Installation
 
 ```sh
-npm i vue2-daterange-picker --save
+npm i vue-daterange-picker-light --save
 ```
 
 or
 
 ```sh
-yarn add vue2-daterange-picker
+yarn add vue-daterange-picker-light
 ```
 
 import to use:
 
 ```JS
-import DateRangePicker from 'vue2-daterange-picker'
+import DateRangePicker from 'vue-daterange-picker-light'
 ```
 
 ## Usage
 
 Register the component
 ```JS
-import DateRangePicker from 'vue2-daterange-picker'
+import DateRangePicker from 'vue-daterange-picker-light'
 //you need to import the CSS manually (in case you want to override it)
-import 'vue2-daterange-picker/dist/vue2-daterange-picker.css'
+import 'vue-daterange-picker-light/dist/vue-daterange-picker-light.css'
 
 export default {
     components: { DateRangePicker },
