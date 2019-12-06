@@ -12,7 +12,9 @@
                     <select v-model="month" class="monthselect col">
                         <option v-for="(m) in months" :key="m.value" :value="m.value">{{m.label}}</option>
                     </select>
-                    <input type="number" v-model="year" class="yearselect col" />
+                    <select v-model="year" class="yearselect col">
+                        <option v-for="(y) in years" :key="y" :value="y">{{y}}</option>
+                    </select>
                 </div>
             </th>
             <th v-else colspan="5" class="month">{{monthName}} {{year}}</th>
@@ -211,6 +213,13 @@
         }
         return monthsData;
       },
+      years() {
+        const first = this.minDate ? this.minDate.getFullYear() : (this.year || (new Date()).getFullYear) - 100
+        const last =  this.maxDate ? this.maxDate.getFullYear() : (this.year || (new Date()).getFullYear) + 100
+        const list = []
+        for(let y = first; y <= last; y++) { list.push(y) }
+        return list
+      },
       locale () { return localeData(this.localeData) }
     },
     watch: {
@@ -297,7 +306,6 @@
     .yearselect {
         padding-right: 1px;
         border: none;
-        appearance: menulist;
     }
 
     .monthselect {

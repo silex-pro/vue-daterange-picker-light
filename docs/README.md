@@ -30,6 +30,7 @@ Register the component
 import DateRangePicker from 'vue-daterange-picker-light'
 //you need to import the CSS manually (in case you want to override it)
 import 'vue-daterange-picker-light/dist/vue-daterange-picker-light.css'
+import { eo } from 'date-fns/locale' // import your locale
 
 export default {
     components: { DateRangePicker },
@@ -40,7 +41,7 @@ export default {
     <date-range-picker
             ref="picker"
             :opens="opens"
-            :locale-data="{ firstDay: 1, format: 'dd-MM-yyyy HH:mm:ss' }"
+            :locale-data="{ locale: eo, format: 'dd-MM-yyyy HH:mm:ss' }"
             :minDate="minDate" :maxDate="maxDate"
             :singleDatePicker="singleDatePicker"
             :timePicker="timePicker"
@@ -108,3 +109,7 @@ import { eo } from 'date-fns/locale' // import your locale
 ## Slots
 
 <component-slots component="DateRangePicker"/>
+
+## Miscellaneous
+
+If you want to control the list of years in the calendar dropdown (by default +/- 100 years from current year) you can set minDate & maxDate props. The years list will adapt.

@@ -119,14 +119,9 @@ describe('DateRangePicker.vue MIN/MAX', () => {
     })
   })
 
-  it('cannot select before min date', (done) => {
+  it('cannot select before min date', () => {
     const input = wrapper.find('.yearselect')
-
-    input.setValue(2015)
-
-    vm.$nextTick(() => {
-      expect(vm.monthDate.getFullYear()).to.equal(2016)
-      done()
-    })
+    console.log(input.findAll(`option[value="2015"]`)[0])
+    expect(input.findAll(`option[value="2015"]`)[0]).not.to.exist
   })
 })

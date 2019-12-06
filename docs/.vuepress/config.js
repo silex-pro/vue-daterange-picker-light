@@ -1,11 +1,11 @@
 module.exports = {
   ga: 'UA-141652960-3',
-  base: '/vue2-daterange-picker/',
-  title: 'Vue2 date range picker',
+  base: '/vue-daterange-picker-light/',
+  title: 'Vue date range picker light',
   description: 'Vue2 date range picker by Innologica',
   themeConfig: {
     nav: [
-      { text: 'Github', link: 'https://github.com/Innologica/vue2-daterange-picker' }
+      { text: 'Github', link: 'https://github.com/silex-pro/vue2-daterange-picker' }
     ],
     sidebar: 'auto'
   },
