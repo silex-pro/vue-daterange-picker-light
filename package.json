@@ -1,6 +1,6 @@
 {
   "name": "vue-daterange-picker-light",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Vue2 date range picker based on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)",
   "author": "Adrien Rambert <adrien@rambert.me>",
   "main": "dist/vue-daterange-picker-light.umd.min.js",
