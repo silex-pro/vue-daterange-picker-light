@@ -6,7 +6,7 @@ The component is in its early stages so if there is something wrong - write an i
 
 ## Demo and Usage
 You can see a demo here:
-https://silex-pro.github.io/vue2-daterange-picker/
+https://silex-pro.github.io/vue-daterange-picker-light/
 
 ## Installation
 

@@ -5,7 +5,7 @@ module.exports = {
   description: 'Vue2 date range picker by Innologica',
   themeConfig: {
     nav: [
-      { text: 'Github', link: 'https://github.com/silex-pro/vue2-daterange-picker' }
+      { text: 'Github', link: 'https://github.com/silex-pro/vue-daterange-picker-light' }
     ],
     sidebar: 'auto'
   },
