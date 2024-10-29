@@ -1,6 +1,6 @@
 {
   "name": "vue-daterange-picker-light",
-  "version": "0.3.5",
+  "version": "0.4.0",
   "description": "Vue2 date range picker based on https://github.com/dangrossman/bootstrap-daterangepicker (no jQuery)",
   "author": "Adrien Rambert <adrien@rambert.me>",
   "main": "dist/vue-daterange-picker-light.umd.min.js",
@@ -20,23 +20,24 @@
     "components:watch": "watch \"npm run components:parse\" ./src",
     "lint": "vue-cli-service lint",
     "lib": "vue-cli-service build --target lib --name vue-daterange-picker-light ./src/index.js",
-    "docs:dev": "concurrently \"npm run components:watch\" \"vuepress dev docs\"",
-    "docs:build": "vuepress build docs",
+    "docs:dev": "concurrently \"npm run components:watch\" \"NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs\"",
+    "docs:build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
     "prepublishOnly": "npm run lib",
     "unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "date-fns": "^2.8.1",
-    "vue": "^2.6.10",
-    "vue-clickaway": "^2.2.2"
+    "date-fns": "^2.8",
+    "sass": "^1.80.4",
+    "vue": "^2.7",
+    "vue-clickaway": "^2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/runtime": "^7.7.4",
-    "@vue/cli-plugin-babel": "^4.1.1",
-    "@vue/cli-plugin-eslint": "^4.1.1",
-    "@vue/cli-plugin-unit-mocha": "^4.1.1",
-    "@vue/cli-service": "^4.1.1",
+    "@vue/cli-plugin-babel": "^4.1",
+    "@vue/cli-plugin-eslint": "^4.1",
+    "@vue/cli-plugin-unit-mocha": "^4.1",
+    "@vue/cli-service": "^4.1",
     "@vue/test-utils": "^1.0.0-beta.30",
     "@vuedoc/parser": "^1.4.0",
     "acorn": "^7.1.0",
@@ -50,11 +51,10 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.0.1",
     "markdown-it-footnote": "^3.0.2",
-    "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "^10.2",
     "vue-template-compiler": "^2.6.10",
     "vuepress": "^1.2",
-    "webpack": "^4.41.2"
+    "webpack": "^4.47.0"
   },
   "browserslist": [
     "> 1%",
